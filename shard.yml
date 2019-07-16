@@ -1,0 +1,17 @@
+name: rethinkdb-health
+version: 0.1.0
+
+authors:
+  - Caspian Baska <caspianbaska@gmail.com>
+
+targets:
+  rethinkdb-health:
+    main: src/rethinkdb-health.cr
+
+dependencies:
+  crystal-rethinkdb:
+    github: kingsleyh/crystal-rethinkdb
+
+crystal: 0.29.0
+
+license: MIT
