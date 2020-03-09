@@ -3,13 +3,14 @@ require "crystal-rethinkdb"
 include RethinkDB::Shortcuts
 
 HOST = ENV["RETHINKDB_HOST"]? || "localhost"
-PORT = ENV["RETHINKDB_PORT"]? || "28015"
+PORT = (ENV["RETHINKDB_PORT"]? || 28015).to_i
 
-begin
+def healthcheck
   cxn = r.connect(
     host: HOST,
     port: PORT,
     db: "rethinkdb",
+    max_retry_attempts: 1,
   )
   r.table("server_status").pluck("id", "name").run(cxn).to_a.first
 rescue e

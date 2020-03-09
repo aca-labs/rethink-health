@@ -1,18 +1,21 @@
 name: rethinkdb-health
-version: 0.1.2
+version: 0.1.3
+crystal: 0.33.0
+license: MIT
 
 authors:
   - Caspian Baska <caspianbaska@gmail.com>
 
 targets:
   rethinkdb-health:
-    main: src/rethinkdb-health.cr
+    main: src/app.cr
 
 dependencies:
   crystal-rethinkdb:
-    github: kingsleyh/crystal-rethinkdb
-    version: "~> 0.1.7"
+    github: aca-labs/crystal-rethinkdb
+    branch: threadsafe
 
-crystal: 0.30.1
-
-license: MIT
+development_dependencies:
+  ameba:
+    github: veelenga/ameba
+    version: ~> 0.10.0
