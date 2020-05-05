@@ -1,4 +1,4 @@
-require "crystal-rethinkdb"
+require "rethinkdb"
 
 include RethinkDB::Shortcuts
 
