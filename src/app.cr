@@ -1,3 +1,3 @@
-require "rethinkdb-health.cr"
+require "./rethinkdb-health"
 
 healthcheck

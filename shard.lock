@@ -1,18 +1,14 @@
 version: 1.0
 shards:
   ameba:
-    github: veelenga/ameba
-    version: 0.10.1
+    github: crystal-ameba/ameba
+    version: 0.12.1
 
-  crystal-rethinkdb:
-    github: aca-labs/crystal-rethinkdb
-    commit: 8155487b5cdbced9fd84cc242d459bcb9cd3b015
+  rethinkdb:
+    github: place-labs/crystal-rethinkdb
+    version: 1.0.0
 
-  habitat:
-    github: luckyframework/habitat
-    version: 0.4.3
-
-  retriable:
-    github: sija/retriable.cr
-    version: 0.2.0
+  simple_retry:
+    github: spider-gazelle/simple_retry
+    version: 1.1.0
 
